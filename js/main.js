@@ -29,3 +29,12 @@ Array.from(scrollLink).map((link) => {
     navbar.classList.remove("show");
   });
 });
+
+/* =========== Preloader =========== */
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 2000);
+});
